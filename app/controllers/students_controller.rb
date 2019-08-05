@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
 
   def index
     # @students = Student.all #use custom search
-    @students = Student.search(params[:findme])
+    @students = Student.search(params[:query])
     
   end
 
