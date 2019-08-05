@@ -19,7 +19,7 @@ class Student < ActiveRecord::Base
       self.all
     else
       # arr.select {|s| s.include? 'sa'}
-      self.all.select { |s| s.name.downcase.include?(student) }
+      self.all.select { |s| s.name.downcase.include?(findme) }
     end
   end
 end
